@@ -1,0 +1,27 @@
+.header {
+    &-fixed {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        z-index: 9999;
+    }
+    &__container {
+        height: 100px;
+        max-width: 950px;
+        @include flex-row();
+
+    }
+    &__left {
+        width: 30%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__right {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

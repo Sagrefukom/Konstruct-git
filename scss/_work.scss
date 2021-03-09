@@ -1,0 +1,20 @@
+.work {
+
+    &__container {
+        @include flex-mobile-center ();
+        background-image: url(../img/work-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+    }
+    &__form {
+        background-color: #171819;
+        width: 100%;
+        @include flex-mobile-center ();
+
+        @media (min-width:992px) {
+            @include flex-row ();
+        }   
+    }
+}

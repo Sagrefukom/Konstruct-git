@@ -1,0 +1,15 @@
+.home {
+    &__container {
+        height: 500px;
+        @include flex-mobile-center ();
+        background-image: url(../img/bg-top.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $text-color-white;
+
+        @media (min-width: 1200px) {
+            height: 800px;
+        }
+    }
+}

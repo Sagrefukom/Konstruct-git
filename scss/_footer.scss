@@ -1,0 +1,103 @@
+.footer {
+    background-color: #141A20;
+    margin: 0 auto;
+
+    &__container {
+        @include flex-mobile-center ();
+        height: 100px;
+        color: #ffffff;
+        height: 100px;
+
+        @media (min-width:768px) {
+            @include flex-row ();
+            max-width: 750px;
+            height: 250px;
+        }
+        @media (min-width:1200px) {
+            display: grid;
+            grid-template-columns: 35% 35% 20% 10%;
+            max-width: 950px;
+        }
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: left;
+        max-width: 250px;
+        height: 100%;
+
+        &-title {
+            display: none;
+            font-size: 20px;
+            line-height: 25px;
+            text-transform: uppercase;
+
+            @media (min-width:768px) {
+                display: flex;
+                align-items: flex-start;
+            }
+        }
+        &-normal {
+            display: none;
+            color: #ffffff;
+
+            @media (min-width:768px) {
+                display: flex;
+            }
+        }
+    }
+    &__navigation {
+        display: none;
+
+        @media (min-width:768px) {
+            display: flex;
+            height: 100%;
+        }
+    }
+    &__copyright {
+        display: none;
+
+        @media (min-width:992px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            text-align: left;
+            height: 100%;
+        }
+
+        &-row {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #171819;
+            color: #ffffff;
+            padding: 10px;
+        }
+        &-item {
+            font-size: 15px;
+            line-height: 17px;
+        }
+    }
+    &__socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        // height: 100%;
+        width: 100%;
+        max-width: 300px;
+
+        // @media(min-width:768px) {
+        //     padding-top: 75px;
+        // }
+
+        // &-item {
+            
+        // }
+    }
+}

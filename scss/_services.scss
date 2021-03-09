@@ -1,0 +1,31 @@
+.services {
+    max-width: 950px;
+    margin: 0 auto;
+
+    &__container {
+        @include flex-mobile-center ();
+
+        &-row {
+            @media (min-width:992px) {
+               display: grid;
+               grid-template-columns: 25% 55% 20%;
+            }
+        }    
+        &-description {
+            @include flex-mobile-center ();
+
+            @media (min-width:992px) {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+            }
+
+            &--item {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                max-width: 300px;
+            }
+        }
+    }
+}
