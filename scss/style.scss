@@ -35,6 +35,14 @@ body {
     background-color: $main-color;
     text-transform: uppercase;
     margin: 20px 0;
+    box-shadow: 2px 3px #19769b;
+    position: relative;
+    top: 0;
+
+    &:active {
+        top: 3px;
+        box-shadow: 0px 1px #19769b;
+    }
 }
 
 .my-prevArrow {
